@@ -25,7 +25,7 @@
     <parent>
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
-        <version>37</version>
+        <version>38</version>
     </parent>
 
     <groupId>org.apache.shiro</groupId>
@@ -111,8 +111,8 @@
              modules' OSGi metadata: -->
         <quartz.version>2.5.2</quartz.version>
         <quartz.docs.version>2.3.0</quartz.docs.version>
-        <slf4j.version>2.0.17</slf4j.version>
-        <log4j.version>2.25.4</log4j.version>
+        <slf4j.version>2.0.18</slf4j.version>
+        <log4j.version>2.26.0</log4j.version>
         <spring.version>7.0.7</spring.version>
         <spring-boot.version>4.0.6</spring-boot.version>
         <guice.version>7.0.0</guice.version>
@@ -345,6 +345,8 @@
                             <!-- Apparently some test in samples/spring-client generates velocity log - would better to reconfigure to output to target/ -->
                             <exclude>velocity.log</exclude>
                             <exclude>CONTRIBUTING.md</exclude>
+                            <exclude>AGENTS.md</exclude>
+                            <exclude>SECURITY.md</exclude>
                             <exclude>**/README.md</exclude>
                             <exclude>**/*.json</exclude>
                             <exclude>**/spring.factories</exclude>
@@ -443,7 +445,7 @@
                 <plugin>
                     <groupId>com.github.siom79.japicmp</groupId>
                     <artifactId>japicmp-maven-plugin</artifactId>
-                    <version>0.25.6</version>
+                    <version>0.25.7</version>
                     <configuration>
                         <oldVersion>
                             <dependency>
@@ -1433,6 +1435,8 @@
                         <!-- Apparently some test in samples/spring-client generates velocity log - would better to reconfigure to output to target/ -->
                         <exclude>velocity.log</exclude>
                         <exclude>CONTRIBUTING.md</exclude>
+                        <exclude>AGENTS.md</exclude>
+                        <exclude>SECURITY.md</exclude>
                         <exclude>**/README.md</exclude>
                         <exclude>**/*.json</exclude>
                         <exclude>**/spring.factories</exclude>
